@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sikayet Var</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="styleandjs/FirmaSikayetListesiJS.js"></script>
+
+  </head>
+  <link rel="stylesheet" href="styleandjs/FirmaSikayetListesiStyle.css" />
+  <body>
+    <!--! Sikayetlerim section start-->
+    <section class="Sikayetler" id="sikayetlerim">
+      <div class="heading">
+         <h5>Sikayetler</h5>
+        </div>
+        <div class="Sikayet" id="sikayet1">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Adidas</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar" onclick="toggleElementNoneBlock('close-button')" >
+                  <i class="fa-solid fa-bars"></i>
+                 </a>
+                 <div class="btn">
+                 <button id="close-button" style="display:none" onclick="toggleElement2None('sikayet1','yorum1')">Kapat</button>
+                 </div>
+               </div>
+               <h1>Adidas Terrex 3 Ay Dayanmadı</h1>
+          </div>
+            <p>Adidas'ın kendi mağazasından aldığım Terrex modelli ayakkabı 6 aylık kısa süreli kullanımda iç astarının büyük bir kısmı yırtıldı ve sağ ayakkabının ön kısmında açılma oldu. Bu sebeple
+               <span id="span" style="display: none;"> hakkım olan garanti sürecine gönderdim fakat kısa bir süre içerisinde sebebi belirtilmeden ret cevabı verildi. Merak ettiğimin ayakkabının başına ne gelmesi gerekiyor ki garanti kabul edilsin. Adidas'tan cevap bekliyor olacağım. Teşekkürler.</span>
+                <span id="span2"><a id  onclick="toggleElement2NoneInline('span','span2')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">10</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElementNoneBlock('yorum1')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                    <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">11/11/2021</p>
+                  </div> 
+              </div>
+        </div>      
+        <div class="yorum" id="yorum1" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+
+        <div class="Sikayet" id="sikayet5">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Adidas</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar" onclick="toggleElement1('close-button5')" >
+                  <i class="fa-solid fa-bars"></i>
+                 </a>
+                 <div class="btn">
+                 <button id="close-button5" style="display:none" onclick="toggleElement3('sikayet5','yorum5')">Kapat</button>
+                 </div>
+               </div>
+               <h1>Adidas Spor Ayakkabı Defosu</h1>
+          </div>
+            <p>Ankara Boyner ® mağazanızdan haziran 2021 tarihinde aldığım adidas spor ayakkabısı yanları 6 ayda yırtıldı incelemeye verdim tarafınızdan olumsuz cevap geldi.
+               <span id="span3" style="display: none;"> 700 TL lik ayakkabı 6 ayda bozulur mu ben devlet memuruyum Üniversiteyi kazanan yeğenime hediye almıştım. Tekrar incelenerek adidas firmasıyla görüşmesini mağduriyetimin giderilmesini arz ederim. </span>
+                <span id="span4"><a id  onclick="toggleElement2('span3','span4')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">10</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElement1('yorum2')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                      <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">11/11/2021</p>
+                  </div> 
+              </div>
+        </div>          
+        <div class="yorum" id="yorum2" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+
+        <div class="Sikayet" id="sikayet4">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Adidas</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar" onclick="toggleElement1('close-button4')" >
+                  <i class="fa-solid fa-bars"></i>
+                 </a>
+                 <div class="btn">
+                 <button id="close-button4" style="display:none" onclick="toggleElement1('sikayet4')">Kapat</button>
+                 </div>
+               </div>
+               <h1>Adidas Değişim Ya Da İade Kabul Edilmemesi</h1>
+          </div>
+            <p>06.08.2022 tarihinde Ankara Cepa AVM ® Adidas mağazasından aldığım Adidas bayan spor ayakkabının sağ teki üretim hatası kaynaklı küçük üretilmiş olup defolu bu ürüne yönelik iade ya da değişim talebim haksiz yere urunu kullanmadığım halde kullanım hatası olduğu gerekçesi ile reddedilmiştir.
+               <span id="span5" style="display: none;"> Hiç kullanılmayan bir ürün nasıl oluyor da bilirkişi tarafından kullanılmış deniyor, bu özensiz ve markaya yakışmayan tutumdan şikayetçiyim, ayıplı ürünün objektif bir değerlendirme yapılarak bir an önce değiştirilmesi ya da iade alınmasını talep ediyorum </span>
+                <span id="span6"><a id  onclick="toggleElement2('span5','span6')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">10</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElement1('yorum3')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                      <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">11/11/2021</p>
+                  </div> 
+              </div>
+        </div>     
+        <div class="yorum" id="yorum3" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+
+        <div class="Sikayet" id="sikayet3">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Adidas</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar" onclick="toggleElement1('close-button3')" >
+                  <i class="fa-solid fa-bars"></i>
+                 </a>
+                 <div class="btn">
+                 <button id="close-button3" style="display:none" onclick="toggleElement1('sikayet3')">Kapat</button>
+                 </div>
+               </div>
+               <h1>Adidas'ın İade Talebini Kullanıcı Hatası Diyerek Reddetmesi</h1>
+          </div>
+            <p>9 ağustosta Adidas'tan aldığımız kız çocuk ayakkabısı üç ay içinde yanlardan açıldı adidas firması kullanıcı kaynakları hata olduğunu söyleyerek iade talebimizi reddetti.
+               <span id="span7" style="display: none;"> Üç ay içinde çocuk spor ayakkabıya ne yapmış olabilir ki kullanıcı hatası olduğu söylenerek talebimiz reddedildi. 
+                Bu gerekçe ile talebimizi reddeden arkadaşlar Adidas'ın marka değerini hiç mi düşünmediler, adidas gibi bir firmaya yakışmadı. </span>
+                <span id="span8"><a id  onclick="toggleElement2('span7','span8')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">10</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElement1('yorum4')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                      <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">11/11/2021</p>
+                  </div> 
+              </div>
+        </div>     
+        <div class="yorum" id="yorum4" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+
+        <div class="Sikayet" id="sikayet2">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Adidas</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar" onclick="toggleElement1('close-button2')" >
+                  <i class="fa-solid fa-bars"></i>
+                 </a>
+                 <div class="btn">
+                 <button id="close-button2" style="display:none" onclick="toggleElement1('sikayet2')">Kapat</button>
+                 </div>
+               </div>
+               <h1>Adidas Ayakkabı Aşınması Ve İnceleme Sorunu</h1>
+          </div>
+            <p>Üç ay önce Adana Optimum ® AVM de. Adidas marka çocuğa ayakkabı aldım. Şu an ayakkabının üç kısmında açıklık meydana geldi ürünü incelemeye gönderdim incelemede kullanıcı hatası olarak.
+               <span id="span9" style="display: none;"> Diğerleri yapıldı. Burada kullanıcı ne hata yapmış olabilir bilmiyorum. Adidas'ta artık kurumsallıktan çıkıştı ürününün arkasında durmuyor.
+                 Çalışanlar tüketici haklara başvuru yap kazanırsın diyorlar anlaşılan o ki bizleri uğraştırmaya çalışıyorlar.</span>
+                <span id="span10"><a id  onclick="toggleElement2('span9','span10')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">10</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElement1('yorum5')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                      <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">11/11/2021</p>
+                  </div> 
+              </div>
+        </div> 
+        <div class="yorum" id="yorum5" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>    
+    </section>
+    <!--! Sikayetleriniz section end-->
+  </body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profil</title>
+        <link rel="stylesheet" href="firmaProfili1.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.1/css/all.css" integrity="sha384-xxzQGERXS00kBmZW/6qxqJPyxW3UR0BPsL4c8ILaIWXva5kFi7TxkIIaMiKtqV1Q" crossorigin="anonymous">
+          </svg>
+    </head>
+    <body>
+            <div class="profile">
+                <div class="info">
+                    <img src="profil.png" alt="profile" />
+                    <div class="user">
+                        <h1>ADİDAS</h1>
+                    </div>
+                </div>
+                <div class="butonlar">
+                  <div class="edit">
+                        <i class="fas fa-edit"></i>
+                        <p>Profili Düzenle</p>
+                    </div>
+                    <div class="bildirimler">
+                        <i class="fas fa-bell"></i>
+                        <p>Bildirimler</p>
+                        <div class="modal hidden">
+                            <p>Adidas hakkında <strong>198 yeni şikayet.</strong></p>
+                            <br><br><hr><br>
+                            <p>Verilen yanıtı 45 kişi <strong>destekledi.</strong></p>
+                            <br><br><hr><br>
+                            <p>789 <strong>yeni takipçi.</strong></p>
+                        </div>
+                    </div>  
+            </div>
+                
+            </div>
+            <div class="border"></div>
+            <div class="insights">
+                <div class="sikayetler">
+                    <p>Gelen Şikayetler</p>
+                    <h1>3849</h1>
+                </div>
+                <div class="cevaplar">
+                    <p>Cevap Verilenler</p>
+                    <h1>1507</h1>
+                </div>
+                <div class="takipciler">
+                    <p>Takipçiler</p>
+                    <h1>15000</h1>
+                </div>
+            </div>
+            <div class="inputs">
+                <div class="form-group">
+                    <span class="field-title">Firma Adı</span>
+                    <label for="nameInput">
+                        <input id="nameInput" type="text" class="input-field" placeholder="MANGO" disabled>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <span class="field-title">E-posta</span>
+                    <label for="ePostaInput">
+                        <input id="ePostaInput" type="text" class="input-field" placeholder="iletisim@mango.com" data-value="iletisim@mango.com" disabled>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <span class="field-title">Adres</span>
+                    <label for="adresInput">
+                        <input id="adresInput" type="text" class="input-field" placeholder="-" data-value disabled>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <span class="field-title">Şifre</span>
+                    <label for="sifreInput">
+                        <input id="sifreInput" type="password" class="input-field" placeholder="********" autocomplete="off" disabled>
+                    </label>
+                </div>
+                <div class="form-group">
+                    <button class="tamam">Bilgileri Kaydet</button>
+                </div>
+            </div>
+            <script>
+                document.querySelector('.tamam').style.display = 'none';
+                document.querySelector('.edit').addEventListener('click', function() {
+                document.getElementById('nameInput').disabled = false;
+                document.getElementById('ePostaInput').disabled = false;
+                document.getElementById('adresInput').disabled = false;
+                document.getElementById('sifreInput').disabled = false;
+                document.querySelector('.tamam').style.display = 'block';
+                
+            });
+
+
+            document.querySelector('.tamam').addEventListener('click', function() {
+            document.getElementById('nameInput').placeholder = document.getElementById('nameInput').value;
+            document.getElementById('ePostaInput').placeholder = document.getElementById('ePostaInput').value;
+            document.getElementById('adresInput').placeholder = document.getElementById('adresInput').value;
+            document.getElementById('sifreInput').placeholder = document.getElementById('sifreInput').value;
+            document.getElementById('nameInput').disabled = true;
+            document.getElementById('ePostaInput').disabled = true;
+            document.getElementById('adresInput').disabled = true;
+            document.getElementById('sifreInput').disabled = true;
+            document.querySelector('.tamam').style.display = 'none';
+                
+            });
+
+            //bildirimler pop up
+            const bildirimler = document.querySelector(".bildirimler");
+                const modal = document.querySelector(".modal");
+
+                bildirimler.addEventListener("click", function() {
+                modal.classList.toggle("hidden");
+                });
+
+            </script>
+
+    </body>
+
+</html>

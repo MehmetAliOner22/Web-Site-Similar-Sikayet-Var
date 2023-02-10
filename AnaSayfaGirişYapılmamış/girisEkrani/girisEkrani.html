@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="giris.css">
+</head>
+<body style="background-color: rgb(175, 175, 175) ;">
+    <div class="main">   
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="giris-button" onclick="musteriGiris()">Müşteri Girişi</button>
+                <button type="button" class="giris-button" onclick="firmaGiris()">Firma Girişi</button>
+            </div>
+            <form id="musteri-inputs" class="inputs-giris">
+                <input type="email" class="input-field" id="input-email1" placeholder="E-postanızı giriniz." required>
+                <input type="password" class="input-field" id="input-password1" placeholder="Şifrenizi giriniz." required>
+                <a href="#">Şifremi unuttum</a>
+                <button id="musteri-button"type="submit" class="submit-btn"><a href="AnaSayfaMusteri/MusteriAnasayfasi.html" target="_blank">Giriş Yap</a></button>
+            </form>
+            <form id="firma-inputs" class="inputs-giris">
+                <input type="email" class="input-field" id="input-email2" placeholder="Kurumsal E-postayı giriniz." required>
+                <input type="password" class="input-field" id="input-password2" placeholder="Şifreyi giriniz." required>
+                <a href="#">Şifremi unuttum</a>
+                <button id="firma-button" type="submit" class="submit-btn"><a href="AnaSayfaFirma/FirmaAnasayfasi.html" target="_blank">Giriş Yap</a></button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var loginMusteri = document.getElementById("musteri-inputs");
+        var loginFirma = document.getElementById("firma-inputs");
+        var Button = document.getElementById("btn"); 
+
+        function firmaGiris() {
+            loginMusteri.style.left= "-400px";
+            loginFirma.style.left= "50px";
+            Button.style.left= "149px";
+        }
+
+        function musteriGiris() {
+            loginMusteri.style.left= "50px";
+            loginFirma.style.left= "450px";
+            Button.style.left= "0px";
+        }
+
+        document.getElementById('musteri-button').addEventListener('click', function() {
+        var email = document.getElementById('input-email1').value;
+        var password = document.getElementById('input-password1').value;
+        if (!email || !password) {
+             alert('E-posta ve şifre gereklidir');
+             event.preventDefault();
+         } else {         
+            if (email === 'denizkilinc@gmail.com' && password === '123') {
+                document.querySelector('button a').click();
+             } else {
+                alert('E-posta veya şifre yanlış');
+                event.preventDefault();
+             }}
+        });
+
+        document.getElementById('firma-button').addEventListener('click', function() {
+        var email = document.getElementById('input-email2').value;
+        var password = document.getElementById('input-password2').value;
+      if (!email || !password) {
+        alert('E-posta ve şifre gereklidir');
+        event.preventDefault();
+      } 
+      else {         
+          if (email === 'adidas@gmail.com' && password === '123') {
+            document.querySelector('button a').click();
+          } 
+          else {
+            alert('E-posta veya şifre yanlış');
+            event.preventDefault();
+          }}
+        });
+    </script> 
+</body>
+</html> 

@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sikayet Var</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src="styleandjs/MusteriSikayetListesiJS.js"></script>
+
+  <link rel="stylesheet" href="styleandjs/MusteriSikayetListesiStyle.css" />
+  </head>
+  <body>
+    <!--! Sikayetlerim section start-->
+    <section class="Sikayetler" id="sikayetlerim">
+      <div class="heading">
+         <h5>Sikayetlerim</h5>
+        </div>
+        <div class="Sikayet" id="sikayet1">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Adidas</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar"  onclick="toggleElement2NoneBlock('edit-button1','delete-button1')">
+                  <i class="fa-solid fa-bars"></i>
+                 </a><div class="btn">
+                 <button id="edit-button1" style="display:none">Düzenle</button>
+                 <button id="delete-button1" style="display:none" onclick="toggleElement2None('sikayet1','yorum1')">Sil</button><a class="bar"></a>
+                 </div>
+                 </div>
+               <h1>Adidas Terrex 3 Ay Dayanmadı</h1>
+          </div>
+            <p>Adidas'ın kendi mağazasından aldığım Terrex modelli ayakkabı 6 aylık kısa süreli kullanımda iç astarının büyük bir kısmı yırtıldı ve sağ ayakkabının ön kısmında açılma oldu. Bu sebeple
+               <span id="span" style="display: none;"> hakkım olan garanti sürecine gönderdim fakat kısa bir süre içerisinde sebebi belirtilmeden ret cevabı verildi. Merak ettiğimin ayakkabının başına ne gelmesi gerekiyor ki garanti kabul edilsin. Adidas'tan cevap bekliyor olacağım. Teşekkürler.</span>
+                <span id="span2"><a id  onclick="toggleElement2NoneInline('span','span2')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">107</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElementNoneBlock('yorum1')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                    <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">20/11/2022</p>
+                  </div> 
+              </div>
+        </div>      
+        <div class="yorum" id="yorum1" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>    
+
+        <div class="Sikayet" id="sikayet2">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Mango</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar"  onclick="toggleElement2NoneBlock('edit-button2','delete-button2')">
+                  <i class="fa-solid fa-bars"></i>
+                 </a><div class="btn">
+                 <button id="edit-button2" style="display:none">Düzenle</button>
+                 <button id="delete-button2" style="display:none" onclick="toggleElement2None('sikayet2','yorum2')">Sil</button><a class="bar"></a>
+                 </div>
+                 </div>
+               <h1>Mango Mağazasından Aldığım Ürün</h1>
+          </div>
+            <p>Geçen ay yani 19 kasımda mağazadan adrese teslimat ile bir ürün sipariş vermiştim.
+               <span id="span3" style="display: none;"> Ne zamandır elime ulaşmadı mağazadan sipariş verirken mağaza personeli 3 gün içinde teslim edilecek demiştiler.
+                Müşteri hizmetlerine arıyorum ulaşamıyorum.
+                Mango sitesinden formu doldurdum geri dönüş yapması için oradan da bilet alamadım. </span>
+                <span id="span4"><a id  onclick="toggleElement2NoneInline('span3','span4')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">10</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElementNoneBlock('yorum2')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                    <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">11/11/2021</p>
+                  </div> 
+              </div>
+        </div>      
+        <div class="yorum" id="yorum2" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+
+        <div class="Sikayet" id="sikayet3">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Mavi</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar"  onclick="toggleElement2NoneBlock('edit-button3','delete-button3')">
+                  <i class="fa-solid fa-bars"></i>
+                 </a><div class="btn">
+                 <button id="edit-button3" style="display:none">Düzenle</button>
+                 <button id="delete-button3" style="display:none" onclick="toggleElement2None('sikayet3','yorum3')">Sil</button><a class="bar"></a>
+                 </div>
+                 </div>
+               <h1>Mavi Markalı Sweatshirt İlk Yıkamada Tüm Rengi Soluyor</h1>
+          </div>
+            <p>Mavi markasından aldığım ürünü renk solmasından dolayı henüz 2 ay giyilmiş olmasına rağmen ve üzerinde yazan yıkama koşullarında yıkamama rağmen sanki yıkarken kendileri yıkamış gibi mantıksız, dalga
+               <span id="span5" style="display: none;"> geçer gibi bir cevapla değişimi iptal ettiler. Mavi markasından bir daha asla alışveriş yapmayacağım. Ürünü daha üzerinde yazan koşullarla yıkamama rağmen makinemdeki su bile boya içerisinde kaldı. Mavi markası ürününün arkasında durmuyor.</span>
+                <span id="span6"><a id  onclick="toggleElement2NoneInline('span5','span6')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">98</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElementNoneBlock('yorum3')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                    <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">15/10/2021</p>
+                  </div> 
+              </div>
+        </div>      
+        <div class="yorum" id="yorum3" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+    
+        <div class="Sikayet" id="sikayet4">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Huawei</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar"  onclick="toggleElement2NoneBlock('edit-button4','delete-button4')">
+                  <i class="fa-solid fa-bars"></i>
+                 </a><div class="btn">
+                 <button id="edit-button4" style="display:none">Düzenle</button>
+                 <button id="delete-button4" style="display:none" onclick="toggleElement2None('sikayet4','yorum4')">Sil</button><a class="bar"></a>
+                 </div>
+                 </div>
+               <h1>Huawei Store'den Bilgim Olmadan Alışveriş Yapılmış</h1>
+          </div>
+            <p>Bende mağdurum Huawei store'den 780 TL Türk Telekom hattıma yansımış hiçbir bilgim ve onayım olmadan her iki kurumdan da şikayetçiyim bu sorunun
+               <span id="span7" style="display: none;"> derhal çözülmesini talep ediyorum. Ödeyecek maddi gücüm yok kendi faturamı zor ödüyorum zaten her yere şikayet edeceğim. </span>
+                <span id="span8"><a id  onclick="toggleElement2NoneInline('span7','span8')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">1005</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElementNoneBlock('yorum4')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                    <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">23/07/2021</p>
+                  </div> 
+              </div>
+        </div>      
+        <div class="yorum" id="yorum4" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+
+        <div class="Sikayet" id="sikayet5">
+          <div class="TopLine">
+               <div class="right">
+                 <i class="fa-solid fa-building"></i> <p>Popeyes</p>
+                 <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+                 <a class="bar"  onclick="toggleElement2NoneBlock('edit-button5','delete-button5')">
+                  <i class="fa-solid fa-bars"></i>
+                 </a><div class="btn">
+                 <button id="edit-button5" style="display:none">Düzenle</button>
+                 <button id="delete-button5" style="display:none" onclick="toggleElement2None('sikayet5','yorum5')">Sil</button><a class="bar"></a>
+                 </div>
+                 </div>
+               <h1>Popeyes Teslim Olmayan Sipariş!</h1>
+          </div>
+            <p>Sultangazi Tempoint Vega AVM Popeyes'tan sipariş verdim. Her zaman olduğu gibi yine teslimat süresini geçti bu sefer bir adım ileri taşıdılar bunu ürünler teslim
+               <span id="span9" style="display: none;"> edilmedi 3 saattir bekliyoruz olan paramıza oldu yazık günah düzgün çalışın. Dava edeceğim sizi.</span>
+                <span id="span10"><a id  onclick="toggleElement2NoneInline('span9','span10')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+            </p>
+                <div class = "interaction">
+                  <div class="left">
+                    <p id = "supporter">205</p> 
+                    <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                    <a onclick="toggleElementNoneBlock('yorum5')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                    <p>Yanıtla</p></a>
+                    <p id = "Durum">Cevaplanmadı</p>
+                  </div>
+                  <div class="right">
+                     <p id="Tarih">17/05/2021</p>
+                  </div> 
+              </div>
+        </div>      
+        <div class="yorum" id="yorum5" style="display: none;">
+          <label class="label"><b>Yanıtınız</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Yorum Ekle</button>
+        </div>
+    </section>
+    <!--! Sikayetleriniz section end-->
+  </body>
+</html>

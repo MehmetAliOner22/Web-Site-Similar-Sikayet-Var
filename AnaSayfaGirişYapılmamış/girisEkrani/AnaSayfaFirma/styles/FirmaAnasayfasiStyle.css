@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+li{
+        list-style: none;
+}
+/*base html code*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+        width: 0.8rem;
+        background-color: #91dddbb9;
+}
+
+html::-webkit-scrollbar-thumb{
+        height: 0.8rem;
+        background-color: black;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+section {
+  padding: 0 4%;
+}
+
+.heading{
+        color: #0080FF;
+        font-size: 4rem;
+        margin: 3.5rem 0;
+        border-bottom: 0.1rem solid mediumseagreen;
+}
+
+/*header start*/
+
+.header .logo img {
+  margin-top: 0.5rem;      
+  height: 2rem;
+}
+
+.header {
+  height: 8rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2%;
+  box-shadow: 0px 0px 17px -2px rgba(0, 0, 0, 0.75);
+  position: sticky;
+}
+
+.header .navbar-navigation a {
+  margin: 0 1rem;
+  font-size: 1.6rem;
+  color:#000000;
+}
+
+.header .navbar-navigation .active,
+.header .navbar-navigation a:hover {
+  border-bottom: 0.1rem solid transparent;
+  border-color: var(--black-color);
+  padding-bottom: 0.5rem;
+}
+.header .navbar-form{
+        display: flex;
+        align-items: center;
+        background-color: #ffffff;
+}
+.header .navbar-form i{
+        font-size: 1.8rem;
+        margin-right: 1rem;
+}
+.header .navbar-form .input-field{
+        display: none;
+        box-shadow: 0px 0px 2px 1px #00000077;
+        border-radius: 1rem;
+        margin-right: 0.5rem;
+}
+.header .navbar-form .profile img {
+        margin-left: 0.5rem;
+        height: 5rem;
+        border-radius: 5rem;
+}
+.header #nav-bar{
+        display: none;
+}
+.mini-header {
+        margin-top: 1rem;
+        display: none;
+      }
+
+.mini-header .profile img {
+        height: 5rem;
+        display: block;
+        margin: 0 auto;
+}
+.search {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.input-field {
+  width: 50%;
+  height: 2rem;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+  box-shadow: 0px 0px 3px 2px #0000004b;
+}
+
+.fa-magnifying-glass {
+  font-size: 1.7rem;
+  margin: 0.4rem 0 0 1rem ;
+  color: #333;
+  cursor: pointer;
+}
+.mini-header .navbar-navigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  height: 18rem;
+}
+
+.mini-header .navbar-navigation li {
+  list-style: none;
+}
+
+.mini-header .navbar-navigation a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 1.6rem;
+  padding: 1rem;
+  display: block;
+}
+
+.mini-header .navbar-navigation a:hover {
+        border-bottom: 0.1rem solid transparent;
+        border-color: var(--black-color);
+        padding-bottom: 0.5rem;
+}
+/*header end*/
+/*footer start*/
+.footer{
+        margin-top: -1rem;
+        background:rgb(12, 7, 7);
+        text-align: center;
+}
+.footer .Share button {
+  cursor: pointer;
+  width: 5rem;
+  height: 5rem;
+  line-height: 5rem;
+  color: #fff;
+  font-size: 3.5rem;
+  border: var(--border);
+  border-radius: 50%;
+  margin: 1rem 12rem 0 0;
+}
+
+.footer .Share a:hover{
+        background-color: var(--main-color);
+}
+
+.footer .credit{
+        font-size: 2rem;
+        color: #fff;
+        font-weight: 300;
+        padding-top: 1.5rem;
+
+}
+.footer .credit span{
+        color: rgb(42, 165, 128);
+        
+}
+/*footer end*/
+ 
+/*responsive start*/
+ @media(max-width: 900px){
+      html { 
+        font-size: 55%; 
+
+ }}
+ @media(max-width: 750px){
+        .header .logo img {
+                margin-top: 0.5rem;      
+                height: 1.5rem;
+        }
+        .header .navbar-form,
+        .header .navbar-navigation{
+                display: none;
+        }
+
+        .header #nav-bar{
+                display: inline;
+                font-size: 1.6rem;
+        }
+        }
+/*@media(min-width: 750px){
+        #mini-header{
+                display: none;
+        }
+}     */ 
+/*pesponsive end*/

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sikayet Ekle</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="styles/MusteriSikayetEkleStyle.css" />
+  <body>
+    <!--! sikayetEkle section start-->
+    <section class="SikayetEkle" id="sikayetEkle">
+      <div class="form-box">
+        <form class="inputs">
+          <label class="label"><b>Firma İsmi</b></label>
+          <input type="text" class="input-field" id="business" required>
+          <label class="label"><b>Şikayet Başlığı</b></label>
+          <input type="text" class="input-field" id="heading" required>
+          <label class="label"><b>Şikayet Açıklaması</b></label>
+          <input type="text" class="input-field" id="comment" required>
+          <button type="submit" class="submit-btn">Şikayeti Ekle</button>
+        </form>
+       </div>
+       
+      <div id="complaint-display" style="display: none;">
+        <h2>Gönderilen Şikayet</h2>
+        <p><strong>Firma İsmi:</strong> <span id="display-business"></span></p>
+        <p><strong>Şikayet Başlığı:</strong> <span id="display-heading"></span></p>
+        <p><strong>Şikayet:</strong> <span id="display-comment"></span></p>
+        
+        <p id="display-complaint"></p>
+      </div>
+    </section>
+    <!--! sikayetEkle section end-->
+    <script>
+        document.getElementById("sikayetEkle").addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Form verilerini değişkenlere ata
+  var business = document.getElementById("business").value;
+  var heading = document.getElementById("heading").value;
+  var comment = document.getElementById("comment").value;
+
+  // Gösterilen şikayet divini göster
+  document.getElementById("complaint-display").style.display = "block";
+
+  // Form verilerini span etiketlerine yaz
+  document.getElementById("display-business").innerHTML = business;
+  document.getElementById("display-heading").innerHTML = heading;
+  document.getElementById("display-comment").innerHTML = comment;
+});
+
+      </script>
+  </body>
+</html>

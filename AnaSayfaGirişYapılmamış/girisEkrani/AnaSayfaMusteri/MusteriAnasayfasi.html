@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sikayet Var</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <script src="styles/MusteriAnaSayfasiJS.js"></script>
+  <link rel="stylesheet" href="styles/MusteriAnasayfasiStyle.css" />
+  <body>
+    <!--! header start-->
+    <header class="header">
+      <a href="#" class="logo">
+        <img src="images/logo.png" alt=" logo" />
+      </a>
+      <i onclick="toggleElementNoneBlock('mini-header')" id="nav-bar" class="fa-solid fa-bars"></i>
+      <nav class="navbar-navigation">
+        
+        <a onclick="showFrame('iframe-anaSayfa')" href="#iframe-anaSayfa">Ana sayfa </a>
+        <a onclick="showFrame('iframe-sikayetler')" href="#iframe-sikayetler">Sikayetler</a>
+        <a onclick="showFrame('iframe-sikayetlerim')" href="#iframe-sikayetlerim">Sikayetlerim</a>
+        <a onclick="showFrame('iframe-sikayetEkle')" href="#iframe-sikayetEkle">Sikayet Ekle</a>
+        <a onclick="showFrame('Siframe-hakkında')" href="#Siframe-hakkında">Hakkında</a>
+        <a onclick="showFrame('Siframe-iletisim')" href="#Siframe-iletisim">İletişim</a>
+      </nav>
+      <nav class="navbar-form">
+         <input type="text" class="input-field" id="comment" required>
+         <i onclick="toggleElementNoneInline('comment')" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        <div class="profile" onclick="showFrame('iframe-musteriProfili')">
+            <a href="#" >
+              <img src="images/profil.jpg" alt="profil" />
+            </a>
+      </div>
+      </nav>
+    </header>
+    <!--! header end-->
+    <!--! mini-header start-->
+    <nav class="mini-header" id="mini-header">
+      <div class="profile" onclick="showFrame('iframe-firmaProfili')">
+        <a href="#" >
+         <img src="images/profil.jpg" alt="profil" />
+        </a>
+      </div>
+        <div class="search">
+         <input type="text" class="input-field" id="comment2" required>
+         <i  onclick="toggleElementNoneInline('comment2')" class="fa-sharp fa-solid fa-magnifying-glass"></i>
+        </div>
+      
+      <nav class="navbar-navigation">
+        <li><a onclick="showFrame('iframe-anaSayfa')" href="#iframe-anaSayfa">Ana sayfa </a></li>
+        <li><a onclick="showFrame('iframe-sikayetler')" href="#iframe-sikayetler">Sikayetler</a></li>
+        <li><a onclick="showFrame('iframe-sikayetlerim')" href="#iframe-sikayetlerim">Sikayetlerim</a></li>
+        <li></li><a onclick="showFrame('iframe-sikayetEkle')" href="#iframe-sikayetEkle">Sikayet Ekle</a></li>
+        <li><a onclick="showFrame('Siframe-hakkında')" href="#Siframe-hakkında">Hakkında</a></li>
+        <li><a onclick="showFrame('Siframe-iletisim')" href="#Siframe-iletisim">İletişim</a></li>
+      </nav>
+  </nav>
+  <!--! mini-header end-->
+    <iframe id="iframe-anaSayfa" src="AnaSayfa/AnaSayfa.html" width="100%" height="700" scrolling="no" style="display:block"></iframe>
+    <iframe id="iframe-sikayetlerim" src="MüsteriŞikayetListele/MusteriSikayetListesi.html" width="100%" height="1500" scrolling="no" style="display:none"></iframe>
+    <iframe id="iframe-sikayetler" src="Sikayetler/Sikayetler.html" width="100%" height="1600" scrolling="no" style="display:none"></iframe>
+    <iframe id="iframe-sikayetEkle" src="MüsteriSikayetEkle/MusteriSikayetEkle.html" width="100%" height="900" scrolling="no" style="display:none"></iframe>
+    <iframe id="iframe-musteriProfili" src="musteriProfil/musteriProfil.html" width="100%" height="800" scrolling="no" style="display:none"></iframe>
+     <iframe id="Siframe-hakkında" src="Hakkında/Hakkında.html" width="100%" height="350" scrolling="no" style="display:block"></iframe>
+    <iframe id="Siframe-iletisim" src="Iletisim/Iletisim.html" width="100%" height="600" scrolling="no" style="display:block"></iframe>
+     <!--! foother section start-->
+      <section class="footer">
+        <div class="Share">
+          <button> 
+            <a
+              href="https://www.linkedin.com/in/mehmet-ali-öner-b7b1b1229/"
+              class="fa-brands fa-linkedin"
+            ></a>
+          </button>
+          <button>
+            <a
+              href="https://www.linkedin.com/in/semra-sıla-ertuğ-140462235/"
+              class="fa-brands fa-linkedin"
+            ></a>
+          </button>
+        </div>
+          <div class = "credit">
+            created by <span> Mehmet Ali Öner And Semra Sıla Ertuğ</span> all rights reserved
+          </div>
+      </section>
+    <!--! footer section end-->
+  </body>
+</html>

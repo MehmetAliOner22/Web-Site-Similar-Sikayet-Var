@@ -1,0 +1,150 @@
+/*base html code*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  background-color: #daf3f3;
+  height: 55vh;
+}
+
+section {
+  padding: 0 4%;
+}
+
+.heading{
+        color: dodgerblue;
+        font-size: 4rem;
+        margin-bottom: 3.5rem;
+        border-bottom: 0.1rem solid mediumseagreen;
+}
+
+/*Anasayfa start*/
+.anaSayfa {
+  min-height: 120vh;
+  background: url(../images/image.png) no-repeat right top scroll;
+  background-size: 85rem 56.5rem;
+  background-position: center right;
+  margin-top: -7.5rem;
+  display: flex;
+  align-items: center;
+}
+.anaSayfa .content {
+  max-width: 30rem;
+
+}
+
+.anaSayfa .content h4 { 
+  flex-direction: row;                  
+  font-size: 3.5rem;
+  color: mediumseagreen;
+}
+
+.anaSayfa .content h4 span{               
+  font-size: 4.5rem;
+  color: dodgerblue;
+}
+
+/*Anasayfa end*/
+/*responsive start*/
+@media (max-width: 1000px) {
+  /* Tüm içerikleri üst üste yapıştırır ve genişliğini 100% yapar */
+  html {
+    font-size: 40.5%;
+  }
+  body {
+    height: 50vh;
+  }
+ .anaSayfa{
+  min-height: 50vh;
+  background: url(../images/image.png) no-repeat right top scroll;
+  background-size: 85rem 56.5rem;
+  background-position: top 10rem;
+  background-position: center right;
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+ }
+
+  /* İçerikleri birleştirir */
+  .content h4 {
+    margin-bottom: 3rem;
+  }
+}@media (max-width: 650px) {
+  html {
+    font-size: 50.5%;
+  }
+  body {
+    height: 50vh;
+  }
+ .anaSayfa{
+  min-height: 50vh;
+  background-position: top 10rem;
+  background-position: center;
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+ }
+
+  .anaSayfa, .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Görüntüleri küçültür */
+  .anaSayfa {
+    background-size: cover;
+  }
+
+  /* İçerikleri dikey olarak hizalar */
+  .content {
+    margin-top: -15rem;
+    align-items: flex-start;
+  }
+  /* İçerikleri birleştirir */
+  .content h4 {
+    margin-bottom: 3rem;
+  }}
+@media (max-width: 480px) {
+  /* Tüm içerikleri üst üste yapıştırır ve genişliğini 100% yapar */
+  html {
+    font-size: 40.5%;
+  }
+  body {
+    height: 50vh;
+  }
+ .anaSayfa{
+  min-height: 50vh;
+  background-position: top 10rem;
+  background-position: center;
+  margin-top: 15rem;
+  display: flex;
+  align-items: center;
+ }
+
+  .anaSayfa, .content {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  /* Görüntüleri küçültür */
+  .anaSayfa {
+    background-size: cover;
+  }
+
+  /* İçerikleri dikey olarak hizalar */
+  .content {
+    margin-top: -15rem;
+    align-items: flex-start;
+  }
+
+  /* İçerikleri birleştirir */
+  .content h4 {
+    margin-bottom: 3rem;
+  }
+}
+/*pesponsive end*/

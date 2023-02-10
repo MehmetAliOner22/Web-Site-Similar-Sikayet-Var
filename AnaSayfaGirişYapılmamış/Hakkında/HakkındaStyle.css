@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,300;1,500&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s ease;
+}
+
+/*base html code*/
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 9rem;
+  scroll-behavior: smooth;
+}
+body {
+  height: 80vh;
+  background-color: #ffffff;
+}
+
+section {
+  padding: 0 4%;
+}
+
+.heading{
+        color: #0080FF;
+        font-size: 4rem;
+        margin: 3.5rem 0;
+        border-bottom: 0.1rem solid mediumseagreen;
+}
+
+
+/*hakkında start*/
+.Hakkında .creative {
+        gap: 1.5rem;
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        border: 0.3rem solid #d6a37370;
+        padding: 3rem;
+}      
+
+.Hakkında h1{
+        font-size: 2rem;
+        color: rgb(51, 39, 39);
+        padding: 2rem 0;
+}
+
+.Hakkında .creative h1{
+        border-bottom: 0.2rem solid #d6a37370;
+}
+
+.Hakkında p{
+        font-size: 1.4rem;
+        padding: 1rem 0;
+        line-height: 1.8;
+        text-align: justify;
+        color: rgb(12, 7, 7);
+}
+
+.Hakkında a{
+        font-size: 1.3rem;
+        color: #13b3be;
+        border-bottom: 0.1rem solid transparent;
+}
+/*hakkında end*/
+/*responsive start*/
+ @media(max-width: 900px){
+      html { 
+        font-size: 55%; 
+ }
+ .header{
+        padding: 1.5rem 2rem;
+ }
+ .header .logo img{
+        height: 3rem;
+ }
+ section{
+        padding: 2rem;
+ }
+
+ }
+ @media(max-width: 750px){
+        html{
+                font-size: 50%;
+        }
+   }
+/*pesponsive end*/

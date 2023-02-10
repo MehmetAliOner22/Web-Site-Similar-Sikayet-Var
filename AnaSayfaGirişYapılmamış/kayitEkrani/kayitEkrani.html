@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="kayit.css">
+</head>
+<body style="background-color: rgb(175, 175, 175) ;">
+    <div class="main">   
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="kayit-button" onclick="musteriKayit()">Müşteri Kaydı</button>
+                <button type="button" class="kayit-button" onclick="firmaKayit()">Firma Kaydı</button>
+            </div>
+            <form id="musteri-inputs" class="inputs-kayit">
+                <input type="text" class="input-field" placeholder="Adınızı giriniz." required>
+                <input type="text" class="input-field" placeholder="Soyadınızı giriniz." required>
+                <input type="email" class="input-field" placeholder="E-postanızı giriniz." required>
+                <input type="password" class="input-field" placeholder="Şifrenizi giriniz." required>
+                <input type="checkbox" class="input-field-checkbox" required>Kayıt olma şartlarını okudum, onaylıyorum.</input>
+                <button type="submit" class="submit-btn">Kayıt Ol</button>
+            </form>
+            <form id="firma-inputs" class="inputs-kayit">
+                <input type="text" class="input-field" placeholder="Firma adını giriniz." required>
+                <input type="email" class="input-field" placeholder="Kurumsal E-postayı giriniz." required>
+                <input type="password" class="input-field" placeholder="Şifreyi giriniz." required>
+                <input type="checkbox" class="input-field-checkbox" required>Kayıt olma şartlarını okudum, onaylıyorum.</input>
+                <button type="submit" class="submit-btn">Kayıt Ol</button>
+            </form>
+        </div>
+    </div>
+    <script>
+        var registerMusteri = document.getElementById("musteri-inputs");
+        var registerFirma = document.getElementById("firma-inputs");
+        var RegisterButton = document.getElementById("btn"); 
+
+        function firmaKayit() {
+            registerMusteri.style.left= "-400px";
+            registerFirma.style.left= "50px";
+            RegisterButton.style.left= "149px";
+        }
+
+        function musteriKayit() {
+            registerMusteri.style.left= "50px";
+            registerFirma.style.left= "450px";
+            RegisterButton.style.left= "0px";
+        }
+    </script> 
+</body>
+</html> 

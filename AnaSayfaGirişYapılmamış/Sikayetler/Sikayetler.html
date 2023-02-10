@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <title>Sikayet Var</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </head>
+  <link rel="stylesheet" href="SikayetlerStyle.css" />
+  <script src="SikayetJS.js"></script>
+  <body>
+    <!--! Sikayetler section start-->
+<section class="Sikayetler" id="sikayetler">
+    <div class="heading">
+       <h5>Öne Çıkan Şikayetler</h5>
+      </div>
+      <div class="Sikayet" id="sikayet1">
+        <div class="TopLine">
+             <div class="right">
+               <i class="fa-solid fa-building"></i> <p>Mango</p>
+               <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+              </div>
+             <h1>Mango Mağazadan Aldığım Ürün</h1>
+        </div>
+          <p>Geçen ay yani 19 kasımda mağazadan adrese teslimat ile bir ürün sipariş vermiştim.
+             <span id="span" style="display: none;"> Ne zamandır elime ulaşmadı mağazadan sipariş verirken mağaza personeli 3 gün içinde teslim edilecek demiştiler.
+              Müşteri hizmetlerine arıyorum ulaşamıyorum.
+              Mango sitesinden formu doldurdum geri dönüş yapması için oradan da bilet alamadım. </span>
+              <span id="span2"><a id  onclick="toggleElement2NoneInline('span','span2')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+          </p>
+              <div class = "interaction">
+                <div class="left">
+                  <p id = "supporter">10</p> 
+                  <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                  <a onclick="toggleElementNoneBlock('yorum1')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                  <p>Yanıtlar</p></a>
+                  <p id = "Durum">Cevaplanmadı</p>
+                </div>
+                <div class="right">
+                   <p id="Tarih">11/11/2021</p>
+                </div> 
+            </div>
+      </div>   
+      <div class="yorum" id="yorum1" style="display: none;">
+        <label class="label"><b>Yanıt</b></label>
+      </div> 
+
+      <div class="Sikayet" id="sikayet2">
+        <div class="TopLine">
+             <div class="right">
+               <i class="fa-solid fa-building"></i> <p>Adidas</p>
+               <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+              </div>
+             <h1>Adidas Ayakkabı Aşınması Ve İnceleme Sorunu</h1>
+        </div>
+          <p>Üç ay önce Adana Optimum ® AVM de. Adidas marka çocuğa ayakkabı aldım. Şu an ayakkabının üç kısmında açıklık meydana geldi ürünü incelemeye gönderdim incelemede kullanıcı hatası olarak. Diğerleri yapıldı.
+             <span id="span3" style="display: none;"> Burada kullanıcı ne hata yapmış olabilir bilmiyorum. Adidas'ta artık kurumsallıktan çıkıştı ürününün arkasında durmuyor. Çalışanlar tüketici haklara başvuru yap kazanırsın diyorlar anlaşılan o ki bizleri uğraştırmaya çalışıyorlar.</span>
+              <span id="span4"><a id  onclick="toggleElement2NoneInline('span3','span4')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+          </p>
+              <div class = "interaction">
+                <div class="left">
+                  <p id = "supporter">10</p> 
+                  <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                  <a onclick="toggleElementNoneBlock('yorum2')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                  <p>Yanıtlar</p></a>
+                  <p id = "Durum">Cevaplanmadı</p>
+                </div>
+                <div class="right">
+                   <p id="Tarih">11/11/2021</p>
+                </div> 
+            </div>
+      </div>   
+      <div class="yorum" id="yorum2" style="display: none;">
+        <label class="label"><b>Yanıt</b></label>
+      </div>          
+
+      <div class="Sikayet" id="sikayet3">
+        <div class="TopLine">
+             <div class="right">
+               <i class="fa-solid fa-building"></i> <p>Bershka</p>
+               <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+              </div>
+             <h1>Bershka Açılan Ayakkabı Tabanı</h1>
+        </div>
+          <p>Bershka'nın Cevahir mağazasından beyaz ayakkabı aldım Daha 1 ayı tamamlamadan ayakkabının yan taraftaki tabanı açıldı. 
+             <span id="span5" style="display: none;"> Ayakkabıyı henüz 3-4 kez giyebilmiştim. Bir an önce ayakkabımın yapılmasını istiyorum. Müşteri memnuniyeti var ise lütfen iade alın ya da değişim.</span>
+              <span id="span6"><a id  onclick="toggleElement2NoneInline('span5','span6')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+          </p>
+              <div class = "interaction">
+                <div class="left">
+                  <p id = "supporter">10</p> 
+                  <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                  <a onclick="toggleElementNoneBlock('yorum3')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                  <p>Yanıtlar</p></a>
+                  <p id = "Durum">Cevaplanmadı</p>
+                </div>
+                <div class="right">
+                   <p id="Tarih">11/11/2021</p>
+                </div> 
+            </div>
+      </div>   
+      <div class="yorum" id="yorum3" style="display: none;">
+        <label class="label"><b>Yanıt</b></label>
+      </div> 
+  
+      <div class="Sikayet" id="sikayet4">
+        <div class="TopLine">
+             <div class="right">
+               <i class="fa-solid fa-building"></i> <p>Huawei</p>
+               <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+              </div>
+             <h1>Casper Via Sıfır Ürün Hoparlör Arızalı</h1>
+        </div>
+          <p>Trendyol telefon aldım telefon arızalı çıktı Trendyol ®'u aradım servise gitmem söylendi ve servise iki kez gitti geldi telefon arıza giderilmedi ve ben tekrar Trendyol'u aradım 1 ay süreci var dediler ve bende Tüketici Hakem Heyeti ® şikayet ettim
+             <span id="span7" style="display: none;"> Casper servis fatura istedi ben yine Trendyol'u aradım fatura için mail adresime gönderile çekmiş hala yok 1 ay oldu ürün servise git gel kullanamadım 1 ayda Trendyol'a gönderir ödem 2 ay olacak beni bu şekilde mağdur ettiler.</span>
+              <span id="span8"><a id  onclick="toggleElement2NoneInline('span7','span8')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+          </p>
+              <div class = "interaction">
+                <div class="left">
+                  <p id = "supporter">10</p> 
+                  <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                  <a onclick="toggleElementNoneBlock('yorum4')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                  <p>Yanıtlar</p></a>
+                  <p id = "Durum">Cevaplanmadı</p>
+                </div>
+                <div class="right">
+                   <p id="Tarih">11/11/2021</p>
+                </div> 
+            </div>
+      </div>   
+      <div class="yorum" id="yorum4" style="display: none;">
+        <label class="label"><b>Yanıt</b></label>
+      </div> 
+
+      <div class="Sikayet" id="sikayet5">
+        <div class="TopLine">
+             <div class="right">
+               <i class="fa-solid fa-building"></i> <p>Huawei</p>
+               <i class="fa-solid fa-user"></i> <p>Deniz Kılınç</p>
+              </div>
+             <h1>Huawei Ekran Kaydedici Sorunu</h1>
+        </div>
+          <p>Huawei telefonumda ekran kaydı alma özelliği silindi. Önceden vardı güncelleme yapmama rağmen özellik geri gelmiyor. 
+             <span id="span9" style="display: none;"> Ses yükseltme tuşundan ya da kontrol panelinde görünmüyor. Telefonum Huawei Y7 2019. Çözüm bulamıyorum.</span>
+              <span id="span10"><a id  onclick="toggleElement2NoneInline('span9','span10')" style="display: inline;"><span>. .</span> Devamını okumak için tıklayınız</a></span> 
+          </p>
+              <div class = "interaction">
+                <div class="left">
+                  <p id = "supporter">10</p> 
+                  <a><i class="fa-solid fa-thumbs-up" id = "like" style="font-size: 1.6rem;"></i></a>
+                  <a onclick="toggleElementNoneBlock('yorum5')"><i class="fa-regular fa-message" style="font-size: 1.6rem;"></i>
+                  <p>Yanıtlar</p></a>
+                  <p id = "Durum">Cevaplanmadı</p>
+                </div>
+                <div class="right">
+                   <p id="Tarih">11/11/2021</p>
+                </div> 
+            </div>
+      </div>   
+      <div class="yorum" id="yorum5" style="display: none;">
+        <label class="label"><b>Yanıt</b></label>
+      </div>
+  </section>
+  <!--! Sikayetler section end-->
+ </body>
+</html>

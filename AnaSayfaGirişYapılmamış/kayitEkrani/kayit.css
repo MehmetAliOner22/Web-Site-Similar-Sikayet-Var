@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main {
+    width: 100%;
+    height: 100%;
+    background-color: #daf3f3;
+    background: transparent;
+}
+
+.form-box {
+    width: 380px;
+    height: 480px;
+    position: relative;
+    background-color: #e7e79641;
+    box-shadow: 0 0 20px 9px #6865641e; 
+    border-radius: 35px;
+    margin: 6% auto;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.button-box {
+    width: 300px;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #220d051a;
+    border-radius: 35px;
+}
+
+.kayit-button {
+    position: relative;
+    padding: 10px 30px;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 13px;
+    font-weight: bolder;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+}
+
+#btn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(to right, #7cb1cfbb, #91dddbad);
+    border-radius: 35px;
+    transition: .5s;
+}
+
+.inputs-kayit {
+    position: absolute;
+    top: 130px;
+    width: 280px;
+    transition: .5s;
+}
+
+.input-field {
+    width: 100%;
+    padding: 10px 9px;
+    border: none;
+    margin: 7px 0;
+    border-radius: 35px;
+    border-bottom: 1px solid rgba(153, 153, 153, 0.705);
+    outline: none;
+}
+
+.submit-btn {
+    display: block;
+    width: 85%;
+    padding: 10px;
+    border: none;   
+    background-color: rgba(255, 255, 255, 0.842);
+    border-radius: 35px;
+    cursor: pointer;
+    color: rgb(36, 34, 34);
+    font-size: 15px;
+    font-weight: 600;
+    margin: 25px auto;
+    outline: none;
+}
+
+.inputs-kayit .input-field-checkbox {
+    display: inline-block;
+    text-decoration: none;
+    color: #777;
+    margin: 13px 0px 5px 0px;
+    font-size: 15px;
+    color: rgba(202, 26, 26, 0.43);
+}
+
+#musteri-inputs {
+   left: 50px; 
+}
+
+#firma-inputs {
+    left: 450px;
+}
